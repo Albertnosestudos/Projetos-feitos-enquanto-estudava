@@ -1,0 +1,99 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(206, 115, 11);
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img {
+    width: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+
+}
+
+.clock {
+    background-color: lightgray;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    position: relative;
+    border: 5px solid darkgray;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+
+}
+.numbers div{
+    position: absolute;
+    font-size: 29px;
+    font-weight: bold;
+    color: lightgoldenrodyellow;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+
+}
+.doze{
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.tres{
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+   
+
+}
+.seis{
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.nove{
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.ponteiro{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.ponteiro::before{
+    content:"";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(98, 233, 226);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    z-index: 4;
+}   
+.ponteiro div{
+    background-color: rgb(6, 222, 250);
+    width: 7px;
+    position: absolute;
+    height: 120px;
+    transform-origin: bottom center;
+    bottom: 50%;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.9);
+    z-index: 3;
+    border-radius: 50% 50% 0 0;
+}
+.ponteiro .hora{
+    height: 80px;
+    transform: rotate(60deg);
+}
+.ponteiro .segundo{
+    transform: rotate(250deg);
+    background-color: goldenrod;
+}
